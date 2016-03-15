@@ -47,16 +47,16 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 
 if (isset($_GET['p']) && $_GET['p'] == "login") {
    if ($_POST['user'] != $username) {
-      echo "Oh Baby a Triple";
+      echo "good";
       exit;
    } else if ($_POST['keypass'] != $password) {
-      echo "Oh Baby a Triple";
+      echo "good";
       exit;
    } else if ($_POST['user'] == $username && $_POST['keypass'] == $password) {
       setcookie('PrivatePageLogin', md5($_POST['keypass'].$nonsense));
       header("Location: $_SERVER[PHP_SELF]");
    } else {
-      echo "Oh Baby a Triple";
+      echo "good";
    }
 }
 ?>
