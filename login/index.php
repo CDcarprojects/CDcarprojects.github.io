@@ -1,7 +1,7 @@
 <?php
-$username = "dave";
-$password = "blackhat";
-$nonsense = "supercalifragilisticexpialidocious";
+$username = "guest";
+$password = "password1";
+$nonsense = "cancer";
 
 if (isset($_COOKIE['PrivatePageLogin'])) {
    if ($_COOKIE['PrivatePageLogin'] == md5($password.$nonsense)) {
