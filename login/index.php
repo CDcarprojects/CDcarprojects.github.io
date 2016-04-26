@@ -1,7 +1,7 @@
 <?php
-$username = "guest";
-$password = "password1";
-$nonsense = "cancer";
+$username = "dave";
+$password = "blackhat";
+$nonsense = "supercalifragilisticexpialidocious";
 
 if (isset($_COOKIE['PrivatePageLogin'])) {
    if ($_COOKIE['PrivatePageLogin'] == md5($password.$nonsense)) {
@@ -47,16 +47,16 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 
 if (isset($_GET['p']) && $_GET['p'] == "login") {
    if ($_POST['user'] != $username) {
-      echo "good";
+      echo "Oh Baby a Triple";
       exit;
    } else if ($_POST['keypass'] != $password) {
-      echo "good";
+      echo "Oh Baby a Triple";
       exit;
    } else if ($_POST['user'] == $username && $_POST['keypass'] == $password) {
       setcookie('PrivatePageLogin', md5($_POST['keypass'].$nonsense));
       header("Location: $_SERVER[PHP_SELF]");
    } else {
-      echo "good";
+      echo "Oh Baby a Triple";
    }
 }
 ?>
