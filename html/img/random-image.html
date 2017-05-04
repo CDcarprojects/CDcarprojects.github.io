@@ -1,0 +1,33 @@
+<html>
+<head> <title>Random Image</title></head>
+<body>
+<h1>
+Random image, press F5 to see the new image. Maybe.<br />
+
+<hr />
+
+<script type="text/javascript">
+var images = [];
+index = 0;
+images[0] = "ima/images0.png";
+images[1] = "ima/images1.png";
+images[2] = "ima/images2.png";
+images[3] = "ima/images3.png";
+images[4] = "ima/images4.png";
+images[5] = "ima/images5.png";
+images[6] = "ima/images6.png";
+
+theimage = Math.floor(Math.random() * images.length);
+//document.write(images[theimage]);
+document.write("<img src= "+images[theimage]+ ">");
+
+
+</script>
+<hr />
+NOT RANDOM
+<img src = "img/image0.png" height = "200");
+</h1>
+</body>
+</html>
+
+
