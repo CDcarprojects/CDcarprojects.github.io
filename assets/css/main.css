@@ -35,7 +35,11 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
-  background-color: #000;
+  /*background-color: #000;*/
+  background-image: url("../img/kael.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 a {
@@ -1176,7 +1180,7 @@ h6 {
 .hero {
   width: 100%;
   min-height: 30vh;
-  background: #000;
+  background: #00000000;
   background-size: cover;
   position: relative;
   padding: 140px 0 60px 0;
