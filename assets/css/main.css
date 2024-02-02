@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #fafafa;
-  --color-primary: #27a776;
+  --color-primary: #c75e22;;
   --color-secondary: #161718;
 }
 
@@ -39,7 +39,7 @@ body {
   background-image: url("/assets/img/kael.png");
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: 100vw auto;
 }
 
 a {
@@ -48,7 +48,7 @@ a {
 }
 
 a:hover {
-  color: #c75e22;
+  color: #32cf93;
   text-decoration: none;
 }
 
